@@ -1,0 +1,417 @@
+//contenido principal index
+.portada{
+    text-align: center;
+    padding-top: 20px;
+    font-family: Zen Kaku Gothic Antique;
+    
+        .titulo-portada{
+            font-weight: 400;
+            font-family: Zen Kaku Gothic Antique;
+            font-size: 2.5rem;
+            text-decoration: none;
+            color:rgba(105, 122, 86, 0.705); ;
+        }
+        .texto-portada{
+                color: black;
+                font-family: Zen Kaku Gothic Antique;
+                font-size:$textS;
+                font-weight: $mediumFont;
+                margin-top: 20px;
+        }
+}
+
+.contenidoPrincipal{
+    display: $d-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: $secondaryFont;
+
+                
+        h3{
+            font-family: $secondaryFont;
+            font-size: $textL;
+            font-style: $mediumFont;
+        }          
+
+
+        .textoFibras{
+            background-image: url(../img/textura-algodon.png);
+            font-family: $secondaryFont;
+            background-position: center;
+            background-size: cover;
+            padding: 20px;
+            font-size: $textXs;
+            font-weight: $mediumFont;
+            color: rgb(1, 5, 0);
+        }
+                        
+        .textoEspacios{
+            background-image: url(../img/espacio-inspiracion.png);
+            font-family: $secondaryFont;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            font-size: $textXs;
+            font-weight: $mediumFont;
+            color: black;
+        }
+                        
+        .textoPromociones{
+            background-image: url(../img/lampara-bamboo.svg);
+            font-family: $secondaryFont;
+            background-position: center;
+            background-size: cover;
+            padding: 20px;
+            font-size: $textXs;
+            color: black;
+            font-weight: $mediumFont;
+                a{
+                    font-family: $secondaryFont;
+                    font-size:$textL;
+                    font-weight: $boldFont;
+                    text-decoration: none;
+                    color:black;
+                }
+
+                        
+        }
+
+}
+
+.whats-app{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 15px;
+    background-color: #6c927a;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float{
+    margin-top: 16px;
+}
+
+
+// termina contenido principal index
+
+// inicio seccion promociones
+.body-promo{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-template-areas: "encabezado encabezado encabezado encabezado" "gift carousel carousel carousel" "plain plain plain plain" "section-promo section-promo section-promo section-promo" "pie pie pie pie";
+	grid-row-gap: 10px;
+	grid-row-gap: 6px;
+	height: 100vh;
+
+        .header-grid{
+            grid-area: encabezado;
+        }
+
+        .section-gift{
+            grid-area: gift;
+            background-color: $secondary;
+	        font-size: 1.8rem;
+            font-weight: $lightFont;
+	        margin-right: 6px;
+            padding: 6%;
+
+                h3{
+                    font-size: 3rem;
+                }
+
+                h4{
+                    font-size: 6rem;
+                    padding-bottom: 10px;
+                }
+
+                p{
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                }
+
+                .btn-gift{
+                    font-size: 2rem;
+                    border: black;
+                    color: #720f54;
+                    background-color: #F3F3EF;
+                    width: 10rem;
+                    height: 4rem;
+                    border-radius: 20px;
+                }
+        }
+        
+        .carousel-promo{
+            grid-area: carousel;
+        }
+        
+        .descuentos-promo{
+            grid-area: plain;
+            background-color: $oldRose;
+            margin: 10px 0px;
+            
+            h3{
+                font-size: 2.5rem;
+                color: #F3F3EF;
+                text-align: center;
+                margin: 20px 0px;  
+                font-weight: $lightFont;
+            }
+
+        }
+
+
+
+}
+// cierra seccion promociones
+
+// inicia seccion nosotros
+.container-fluid{
+    
+    .container-nosotros{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+
+        .imagen-arq{
+            padding: 20px;
+        }
+
+        .intro{
+            
+            h3{
+                margin-top: 0;
+				margin-bottom: 30px;
+                font-family: $secondaryFont;
+				font-size: 3rem;
+				font-weight: 400;
+                padding: 40px 70px;
+                
+            }
+            
+            div{
+                padding-left: 50px;
+            }
+            
+            div{
+                padding: 30px 30px;
+                
+                p{
+                    font-family: $secondaryFont;
+                    text-align: justify;
+                    font-size: $textS;
+                    font-weight: $lightFont;  
+                    padding-right: 20px;    
+                }
+
+            }
+        
+        }
+
+    }
+
+}
+   
+// cierra seccion nosotros
+
+// inicia seccion store
+
+
+.bg-taupe{
+    background-color:#f5f5f0;
+    margin: 0;
+
+}
+
+.btn-store{
+    width: 200px;
+    height: 30px;
+    font-size: 1.5rem;
+    border: solid;
+    border-width: 1px;
+    border-radius: 1rem;
+    color: $primary;
+    
+}
+
+.btn-ver{
+    border: solid;
+    border-width: 1px;
+    border-radius: 1rem;
+    color: $primary;
+    cursor: pointer;
+    transform: translateX(90px);
+    align-self: flex-end;
+    font-size: 1.5rem;
+    font-family: $secondaryFont;
+}
+
+.textM{
+    font-family: $secondaryFont;
+    font-size: $textS;
+    font-weight: $lightFont;
+}
+
+.titulo-tarjeta{
+    padding: 10px;
+    font-weight: $boldFont;
+    font-size: $textS;
+    font-family: $secondaryFont;
+    text-align: center;
+    background-color:#f5f5f0;
+}
+
+
+
+.card-text{
+    overflow: hidden; 
+	text-overflow: ellipsis; 
+	display: -webkit-box; 
+	-webkit-line-clamp: 3; 
+	-webkit-box-orient: vertical;
+
+}
+
+
+
+
+
+
+// inicia seccion a medida
+
+.featurette{
+    div{
+        h2{
+            font-weight: $boldFont;
+            font-size: 2.5rem;
+
+            span{
+                font-weight: $boldFont;
+                font-family: Zen Kaku Gothic Antique;
+            }
+        }
+    }
+
+}
+
+.titulo-featurette{
+    font-size: $textL;
+    font-family: $secondaryFont;
+    text-decoration: none
+    
+    
+    
+}
+
+.descripcion-featurette{
+    font-size: $textS;
+    text-decoration: none;
+    text-shadow: none;
+    text-align: justify;
+    font-family: $secondaryFont;
+}
+
+.text-taupe{
+    color: $oldRose;
+    font-weight: $lightFont;
+    font-size: $textM;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+// inicia pagina error 404
+
+.main-404{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    .container-404{
+        h3{
+            font-size: 10rem;
+            color: $secondary;
+        }
+
+        h4{
+            font-size: $textXxl;
+            
+        }
+    
+    }
+
+}
+// cierra pagina error 404
+
+// inicia seccion contacto
+.main-formulario{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-family: $secondaryFont;
+    font-weight: $mediumFont;
+    font-size: 2rem;
+
+    .formulario-boostrap{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+
+        .titulo-contacto{
+            font-family: $secondaryFont;
+           font-weight: $mediumFont;
+           font-size: 2.4rem;
+           font-weight: 400;
+           color: $footer;
+           margin-bottom: 50px;
+           margin-top: 30px;
+        }
+
+        .formularioBoostrap{
+            font-family: $secondaryFont;
+            font-weight: $mediumFont;
+            font-size: 2rem;
+            
+            .div{
+                
+                    
+            
+                }
+            }
+
+        }
+    
+
+    }
+
+    .google-maps{
+       flex-direction: flex-end;
+       padding-left: 1px;
+       
+       .titulo-mapa{
+           font-family: $secondaryFont;
+           font-weight: $mediumFont;
+           font-size: 2.4rem;
+           font-weight: 400;
+           color: $footer;
+       }
+    }
+
+    .sobre{
+        margin-left: 50px;
+        margin-right:50px;
+    }
+
+
+
+}

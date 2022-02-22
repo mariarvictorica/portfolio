@@ -1,0 +1,70 @@
+//inicia seccion cards promociones
+
+.section-promo{
+    grid-area: section-promo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    .card-promo{
+        margin: 4px 10px;
+    }
+
+        .card-body{
+            justify-content: center;
+            
+            .card-title{
+                font-size: 1.6rem;
+            }
+            .card-text{
+                font-size: 1.4rem;
+                font-weight: $lightFont;
+                text-align: center;
+            }
+
+            .btn-comprar{
+                padding-bottom: 2.3rem;
+                font-size: 1.4rem;
+                border: black;
+                color: #720f54;
+                background-color: #F3F3EF;
+                width: 10rem;
+                height: 2rem;
+                border-radius: 20px;
+                
+            }
+            
+        }
+
+        .card .text-crossout{
+            text-decoration: line-through;
+            }
+        
+}
+//fin cards promocion
+
+//inicia seccion cards nosotros
+
+.seccion-proyectos{
+    
+    .accordion{
+        .boton-prueba{
+            font-size: $textS;
+
+        }
+
+    }
+}
+//fin seccion cards nosotros
+
+//inicia seccion cards store
+
+.cards-store{
+    padding-bottom: 20px;
+    .card-store{
+        .titulo-tarjeta{
+            font-size: 2rem;
+            color: rgb(10, 1, 1);
+        }
+    }
+}

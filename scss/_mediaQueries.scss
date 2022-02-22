@@ -1,0 +1,146 @@
+@media screen and (max-width: 1024px){
+    .body-promo{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "encabezado encabezado" "gift gift" "carousel carousel" "plain plain" "section-promo section-promo" "section-promo section-promo" "pie pie";
+    grid-row-gap: 10px;
+    grid-row-gap: 6px;
+    }
+
+    .section-gift{
+        margin: 0px;
+    }
+
+    .section-promo{
+        flex-wrap: wrap;
+    }
+
+    .card-promo{
+        margin: 10px 4px;
+    }
+
+    .descuentos-promo{
+        background-color: #3D5859;
+    }
+
+        .descuentos-promo h3{
+            color: white;
+            font-size: $textM;
+        }
+}
+
+@media screen and (max-width: 600px){
+    .body-promo{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "encabezado encabezado" "gift gift" "carousel carousel" "plain plain" "section-promo section-promo" "section-promo section-promo" "pie pie";
+    grid-row-gap: 10px;
+    grid-row-gap: 6px;
+    }
+        
+    
+    
+    .informacion{
+        font-size: 1.5rem;
+
+    }
+    
+    .section-gift{
+        margin: 0px;
+    }
+        
+    .section-promo{
+        flex-wrap: wrap;
+    }
+        
+    .card-promo{
+        margin: 10px 4px;
+    }
+        
+    .descuentos-promo{
+        background-color: #3D5859;
+    }
+        
+    .descuentos-promo h3{
+        color: white;
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+.body-promo{
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto auto auto auto auto auto;
+grid-template-areas: "encabezado encabezado" "gift gift" "carousel carousel" "plain plain" "section-promo section-promo" "section-promo section-promo" "pie pie";
+grid-row-gap: 10px;
+grid-row-gap: 6px;
+}
+
+.informacion{
+    font-size: 1.5rem;
+}
+        
+.section-gift{
+    margin: 0px;
+}
+
+.section-gift h3{
+    font-size: 2rem;
+}
+    
+.section-gift h4{
+    font-size: 3rem;
+}
+
+.section-gift p{
+    font-size: 1.2rem;
+}
+    
+.section-promo{
+    flex-wrap: wrap;
+}
+        
+.card-promo{
+    margin: 10px 4px;	
+}
+            
+.descuentos-promo{
+    background-color: #3D5859;	
+}
+        
+.descuentos-promo h3{
+    color: white;
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+
+.zocalo{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "datos" "redes";
+}
+
+.zocalo{
+    background-color: #A49E8E;
+}
+
+.zocalo h4{
+    grid-area: datos;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.zocalo .zocaloRedes{
+    grid-area: redes;
+}
+
+
+.zocalo h4{
+    font-size: 1.4rem;
+}
+
+}

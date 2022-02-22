@@ -1,0 +1,40 @@
+.zocalo{
+    background-color: $footer;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    padding-left: 20px;
+
+    .zocalo-data{
+        .fas{
+            font-size: 1.5rem;
+        }
+        h4{
+            color:$white;
+            font-family: $mainFont;
+            font-weight: $lightFont;
+            padding-right: 30px;
+            font-size:$textS;
+        }
+
+    }
+    
+    .zocaloRedes{
+        a{
+            padding-right: 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: rgb(253, 252, 252);
+        }
+    }
+}
+
+.zocalo{
+    grid-area: pie;
+}
+
